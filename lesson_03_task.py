@@ -229,9 +229,9 @@
 # shifr = int(input())
 # c1 = (shifr // 100 + (shifr // 10) % 10)
 # c2 = ((shifr // 10) % 10 + shifr % 10)
-# if c1 > c2:
+# if c1 >= c2:
 #     print(c1, c2, sep='')
-# if c2 > c1:
+# if c2 >= c1:
 #     print(c2, c1, sep='')
 
 # На раз-два-три, рассчитайсь!
