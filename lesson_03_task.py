@@ -268,19 +268,31 @@
 # Треугольник — это три точки, не лежащие на одной прямой.
 # 3 4 5 -> YES
 
-num1 = int(input())
-num2 = int(input())
-num3 = int(input())
-if num1 < num2 + num3 and num2 < num1 + num3 and num3 < num1 + num2:
-    print('yes')
-else:
-    print('no')
+# num1 = int(input())
+# num2 = int(input())
+# num3 = int(input())
+# if num1 < num2 + num3 and num2 < num1 + num3 and num3 < num1 + num2:
+#     print('yes')
+# else:
+#     print('no')
 
 # Даны три целых числа. Определите, сколько среди них совпадающих.
 # Программа должна вывести одно из чисел:
 # 3 (если все совпадают), 2 (если два совпадает) или 0 (если все числа различны).
 
-
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+if num1 == num2 and num1 == num3:
+    print('3')
+elif num1 == num2 and num1 != num3:
+    print(2)
+elif num2 == num3 and num2 != num1:
+    print(2)
+elif num1 == num3 and num1 != num2:
+    print(2)
+else:
+    print('0')
 
 # Шахматная ладья ходит по горизонтали или вертикали. Даны две различные клетки шахматной доски,
 # определите, может ли ладья попасть с первой клетки на вторую одним ходом.
