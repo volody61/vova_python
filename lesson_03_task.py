@@ -298,21 +298,42 @@
 # определите, может ли ладья попасть с первой клетки на вторую одним ходом.
 # 4 4 5 5 -> NO
 
-x1 = int(input())
-y1 = int(input())
-x2 = int(input())
-y2 = int(input())
-if x1 == x2 or y1 == y2:
-    print('yes')
-else:
-    print('no')
+# x1 = int(input())
+# y1 = int(input())
+# x2 = int(input())
+# y2 = int(input())
+# if x1 == x2 or y1 == y2:
+#     print('yes')
+# else:
+#     print('no')
 
 # Шахматный король ходит по горизонтали, вертикали и диагонали, но только на 1 клетку.
 # Даны две различные клетки шахматной доски, определите, может ли король попасть
 # с первой клетки на вторую одним ходом.
 # 4 4 5 5 -> YES
 
-
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+if x1 == x2 and y1 == y2 - 1:
+    print('yes')
+elif x1 == x2 and y1 == y2 + 1:
+    print('yes')
+elif x1 == x2 - 1 and y1 == y2:
+    print('yes')
+elif x1 == x2 + 1 and y1 == y2:
+    print(yes)
+elif x1 == x2 - 1 and y1 == y2 - 1:
+    print('yes')
+elif x1 == x2 + 1 and y1 == y2 + 1:
+    print('yes')
+elif x1 == x2 - 1 and y1 == y2 + 1:
+    print('yes')
+elif x1 == x2 + 1 and y1 == y2 - 1:
+    print(yes)
+else:
+    print('no')
 
 # Шахматный слон ходит по диагонали. Даны две различные клетки шахматной доски, определите,
 # может ли слон попасть с первой клетки на вторую одним ходом.
@@ -341,6 +362,7 @@ else:
 # Определите, можно ли таким образом отломить от шоколадки ровно K долек.
 # 4 2 6 -> YES
 # 2 10 7 -> NO
+
 
 
 
