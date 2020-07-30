@@ -386,13 +386,13 @@
 # 4 2 6 -> YES
 # 2 10 7 -> NO
 
-n = int(input())
-m = int(input())
-k = int(input())
-if k < n * m and ((k % n == 0) or (k % m == 0)):
-    print('YES')
-else:
-    print('NO')
+# n = int(input())
+# m = int(input())
+# k = int(input())
+# if k < n * m and ((k % n == 0) or (k % m == 0)):
+#     print('YES')
+# else:
+#     print('NO')
 
 # Яша плавал в бассейне размером N×M метров и устал. В этот момент он обнаружил,
 # что находится на расстоянии X метров от одного из длинных бортиков
@@ -400,19 +400,19 @@ else:
 # Какое минимальное расстояние должен проплыть Яша, чтобы выбраться из бассейна на бортик?
 # 23 52 8 43 -> 8
 
-n = int(input())
-m = int(input())
-x = int(input())
-y = int(input())
-# n, m = min(n, m), max(n, m)
-if n > m:
-    n, m = m, n
-if x >= n / 2:
-    x = n - x
-if y >= m / 2:
-    y = m - y
-# print(min(x, y))
-if x < y:
-    print(x)
-else:
-    print(y)
+# n = int(input())
+# m = int(input())
+# x = int(input())
+# y = int(input())
+# # n, m = min(n, m), max(n, m)
+# if n > m:
+#     n, m = m, n
+# if x >= n / 2:
+#     x = n - x
+# if y >= m / 2:
+#     y = m - y
+# # print(min(x, y))
+# if x < y:
+#     print(x)
+# else:
+#     print(y)
