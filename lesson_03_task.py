@@ -354,14 +354,14 @@
 # 1 1 2 2 -> YES
 # 1 1 2 3 -> NO
 
-x1 = int(input())
-y1 = int(input())
-x2 = int(input())
-y2 = int(input())
-if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
-    print('YES')
-else:
-    print('NO')
+# x1 = int(input())
+# y1 = int(input())
+# x2 = int(input())
+# y2 = int(input())
+# if abs(x1 - x2) == abs(y1 - y2) or x1 == x2 or y1 == y2:
+#     print('YES')
+# else:
+#     print('NO')
 
 # Шахматный конь ходит буквой “Г” — на две клетки по вертикали в любом направлении
 # и на одну клетку по горизонтали, или наоборот. Даны две различные клетки шахматной доски,
@@ -369,7 +369,16 @@ else:
 # 1 1 2 4 -> NO
 # 1 1 8 8 -> NO
 
-
+# x1 = int(input())
+# y1 = int(input())
+# x2 = int(input())
+# y2 = int(input())
+# dx = abs(x1 - x2)
+# dy = abs(y1 - y2)
+# if dx == 1 and dy == 2 or dx == 2 and dy == 1:
+#     print('YES')
+# else:
+#     print('NO')
 
 # Шоколадка имеет вид прямоугольника, разделенного на N×M долек.
 # Шоколадку можно один раз разломить по прямой на две части.
@@ -377,8 +386,13 @@ else:
 # 4 2 6 -> YES
 # 2 10 7 -> NO
 
-
-
+n = int(input())
+m = int(input())
+k = int(input())
+if k < n * m and ((k % n == 0) or (k % m == 0)):
+    print('YES')
+else:
+    print('NO')
 
 # Яша плавал в бассейне размером N×M метров и устал. В этот момент он обнаружил,
 # что находится на расстоянии X метров от одного из длинных бортиков
@@ -386,4 +400,19 @@ else:
 # Какое минимальное расстояние должен проплыть Яша, чтобы выбраться из бассейна на бортик?
 # 23 52 8 43 -> 8
 
-
+n = int(input())
+m = int(input())
+x = int(input())
+y = int(input())
+# n, m = min(n, m), max(n, m)
+if n > m:
+    n, m = m, n
+if x >= n / 2:
+    x = n - x
+if y >= m / 2:
+    y = m - y
+# print(min(x, y))
+if x < y:
+    print(x)
+else:
+    print(y)
