@@ -1,4 +1,3 @@
-
 # lst = [2, 3, 42, 2, 3, 6, 3, 4, 9]
 #
 # print(lst[1])
@@ -20,7 +19,9 @@
 
 lst = [40, 30, 60]
 
+
 def get_ball(lst):
     return 42
+
 
 print(get_ball(lst))
